@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MATRICES FOR NOTHING COMMUNITY</title>
+    <meta name="description" content="Create and use dot-matrix styled imagery to show love for Nothing." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://udaign.github.io/matrices/">
+    <meta property="og:title" content="Matrices for Nothing Community">
+    <meta property="og:description" content="Create and use dot-matrix styled imagery to show love for Nothing.">
+    <meta property="og:image" content="https://udaign.github.io/matrices/public/images/social-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://udaign.github.io/matrices/">
+    <meta property="twitter:title" content="Matrices for Nothing Community">
+    <meta property="twitter:description" content="Create and use dot-matrix styled imagery to show love for Nothing.">
+    <meta property="twitter:image" content="https://udaign.github.io/matrices/public/images/social-preview.png">
+
     <link rel="icon" type="image/png" href="/matrices/assets/favicon-DTW1mLyQ.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,6 +71,36 @@
         /* Scale down UI to match appearance at 75% browser zoom, as requested. */
         font-size: 75%;
       }
+      @keyframes glow {
+        0% {
+          box-shadow: 0 0 3px #FCCA21, 0 0 6px #FCCA21, 0 0 9px #FCCA21;
+          background-color: #FCCA21;
+          color: #14151f;
+        }
+        25% {
+          box-shadow: 0 0 3px #0D4E81, 0 0 6px #0D4E81, 0 0 9px #0D4E81;
+          background-color: #0D4E81;
+          color: #FFFFFF;
+        }
+        50% {
+          box-shadow: 0 0 3px #BD1721, 0 0 6px #BD1721, 0 0 9px #BD1721;
+          background-color: #BD1721;
+          color: #FFFFFF;
+        }
+        75% {
+          box-shadow: 0 0 3px #E0E0E0, 0 0 6px #E0E0E0, 0 0 9px #E0E0E0;
+          background-color: #E0E0E0;
+          color: #14151f;
+        }
+        100% {
+          box-shadow: 0 0 3px #FCCA21, 0 0 6px #FCCA21, 0 0 9px #FCCA21;
+          background-color: #FCCA21;
+          color: #14151f;
+        }
+      }
+      .easter-egg-glow {
+        animation: glow 3s ease-in-out infinite;
+      }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1L57E9DYJZ"></script>
@@ -77,7 +123,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/matrices/assets/index-Qfp5k5b0.js"></script>
+  <script type="module" crossorigin src="/matrices/assets/index-B2W1RmlW.js"></script>
 </head>
   <body>
     <div id="root"></div>
