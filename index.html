@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MATRICES FOR NOTHING COMMUNITY</title>
+    <title>Matrices: Dot-Matrix Wallpaper & Image Creator for Nothing Community</title>
     <meta name="description" content="Create and use dot-matrix styled imagery to show love for Nothing." />
+    
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#14151f" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -20,26 +24,35 @@
     <meta property="twitter:description" content="Create and use dot-matrix styled imagery to show love for Nothing.">
     <meta property="twitter:image" content="https://udaign.github.io/matrices/public/images/social-preview.png">
 
-    <link rel="icon" type="image/png" href="/matrices/assets/favicon-DTW1mLyQ.png">
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Matrices: Dot-Matrix Image & Wallpaper Creator for Nothing Community",
+      "url": "https://udaign.github.io/matrices/",
+      "description": "Create and use dot-matrix styled imagery inspired by Nothing. Includes tools for value aliasing, glyph mirror profile pictures, matrix wallpapers, and photo widgets.",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "screenshot": [
+        "https://udaign.github.io/matrices/images/screenshots/desktop-2.png",
+        "https://udaign.github.io/matrices/images/screenshots/mobile-2.png"
+      ],
+      "image": "https://udaign.github.io/matrices/public/images/social-preview.png",
+      "browserRequirements": "Requires a modern web browser with JavaScript enabled."
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <style>
-        /* Define your custom font */
-        @font-face {
-            font-family: 'Ndot-55'; /* This is the name you'll use in CSS */
-            src: url('/matrices/fonts/Ndot-55.otf') format('opentype'); /* Path from public/ */
-            font-weight: normal; /* Adjust if your font has different weights */
-            font-style: normal;  /* Adjust if your font has italic variants */
-            font-display: swap;  /* Good for performance: shows fallback text while loading */
-        }
-
-        .page-title{
-          font-family: 'Ndot-55', sans-serif;
-        }
-    </style>
 
     <script>
       tailwind.config = {
@@ -66,42 +79,6 @@
         }
       }
     </script>
-    <style>
-      html {
-        /* Scale down UI to match appearance at 75% browser zoom, as requested. */
-        font-size: 75%;
-      }
-      @keyframes glow {
-        0% {
-          box-shadow: 0 0 3px #FCCA21, 0 0 6px #FCCA21, 0 0 9px #FCCA21;
-          background-color: #FCCA21;
-          color: #14151f;
-        }
-        25% {
-          box-shadow: 0 0 3px #0D4E81, 0 0 6px #0D4E81, 0 0 9px #0D4E81;
-          background-color: #0D4E81;
-          color: #FFFFFF;
-        }
-        50% {
-          box-shadow: 0 0 3px #BD1721, 0 0 6px #BD1721, 0 0 9px #BD1721;
-          background-color: #BD1721;
-          color: #FFFFFF;
-        }
-        75% {
-          box-shadow: 0 0 3px #E0E0E0, 0 0 6px #E0E0E0, 0 0 9px #E0E0E0;
-          background-color: #E0E0E0;
-          color: #14151f;
-        }
-        100% {
-          box-shadow: 0 0 3px #FCCA21, 0 0 6px #FCCA21, 0 0 9px #FCCA21;
-          background-color: #FCCA21;
-          color: #14151f;
-        }
-      }
-      .easter-egg-glow {
-        animation: glow 3s ease-in-out infinite;
-      }
-    </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1L57E9DYJZ"></script>
     <script>
@@ -112,7 +89,6 @@
       gtag('config', 'G-1L57E9DYJZ');
     </script>
 
-<link rel="stylesheet" href="/index.css">
   <script type="importmap">
 {
   "imports": {
@@ -123,9 +99,21 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/matrices/assets/index-BL4tVad7.js"></script>
+  <script type="module" crossorigin src="/matrices/assets/index-CggWv4PR.js"></script>
+  <link rel="stylesheet" crossorigin href="/matrices/assets/index-DA6peLQR.css">
 </head>
   <body>
     <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./service-worker.js').then(registration => {
+            console.log('Service Worker registered: ', registration);
+          }).catch(registrationError => {
+            console.log('Service Worker registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
   </body>
 </html>

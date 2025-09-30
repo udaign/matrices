@@ -1,0 +1,65 @@
+{
+  "id": "matrices",
+  "short_name": "Matrices",
+  "name": "Matrices for Nothing Community",
+  "description": "Create and use dot-matrix styled imagery to show love for Nothing.",
+  "icons": [
+    {
+      "src": "images/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/maskable-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable",
+      "scope": "/matrices/"
+    }
+  ],
+  "start_url": "/matrices/",
+  "display": "standalone",
+  "background_color": "#14151f",
+  "theme_color": "#14151f",
+  "scope":"/matrices/",
+  "screenshots": [
+    {
+      "src": "images/screenshots/desktop-1.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop - Unloaded"
+    },
+    {
+      "src": "images/screenshots/desktop-2.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop - Loaded"
+    },
+    {
+      "src": "images/screenshots/mobile-1.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile - Unloaded"
+    },
+    {
+      "src": "images/screenshots/mobile-2.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile - Loaded"
+    }
+  ],
+  "url_handlers": [
+    {
+      "origin": "https://udaign.github.io/matrices"
+    }
+  ]
+}
