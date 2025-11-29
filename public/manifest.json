@@ -1,0 +1,122 @@
+{
+  "id": "matrices",
+  "short_name": "Matrices",
+  "name": "Matrices for Nothing Community",
+  "description": "Create and use dot-matrix styled imagery to show love for Nothing.",
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "images/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/maskable-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable",
+      "scope": "/matrices/"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Value Aliasing",
+      "short_name": "Value Aliasing",
+      "description": "Create artistic, value-based dot patterns from any image.",
+      "url": "/matrices/",
+      "icons": [{ "src": "images/shortcuts/VA_40px.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Glyph Mirror",
+      "short_name": "Glyph Mirror",
+      "description": "Design unique, mirrored profile pictures in the Nothing glyph style.",
+      "url": "/matrices/",
+      "icons": [{ "src": "images/shortcuts/GM_40px.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Matrix Wallpaper",
+      "short_name": "Wallpaper",
+      "description": "Generate dot-matrix wallpapers for your phone or desktop.",
+      "url": "/matrices/",
+      "icons": [{ "src": "images/shortcuts/MW_40px.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Photo Widget",
+      "short_name": "Photo Widget",
+      "description": "Craft custom, transparent photo widgets for your home screen.",
+      "url": "/matrices/",
+      "icons": [{ "src": "images/shortcuts/PW_40px.png", "sizes": "192x192" }]
+    }
+  ],
+  "share_target": {
+    "action": "/matrices/",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "image",
+          "accept": ["image/*"]
+        }
+      ]
+    }
+  },
+  "start_url": "/matrices/",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#14151f",
+  "theme_color": "#14151f",
+  "scope":"/matrices/",
+  "categories": [
+    "personalization",
+    "photo",
+    "utilities"
+  ],
+  "prefer_related_applications": false,
+  "iarc_rating_id": "",
+  "screenshots": [
+    {
+      "src": "images/screenshots/desktop-1.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop - Unloaded"
+    },
+    {
+      "src": "images/screenshots/desktop-2.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop - Loaded"
+    },
+    {
+      "src": "images/screenshots/mobile-1.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile - Unloaded"
+    },
+    {
+      "src": "images/screenshots/mobile-2.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile - Loaded"
+    }
+  ],
+  "url_handlers": [
+    {
+      "origin": "https://udaign.github.io"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+/* Custom Font */
+@font-face {
+    font-family: 'Ndot-55';
+    src: url('/fonts/Ndot-55.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.page-title {
+  font-family: 'Ndot-55', sans-serif;
+}
+
+.font-ndot {
+  font-family: 'Ndot-55', sans-serif;
+}
+
+/* Global Styles */
+html {
+  /* Scale down UI to match appearance at 75% browser zoom, as requested. */
+  font-size: 75%;
+}
+
+/* Animations */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 3px #FCCA21, 0 0 6px #FCCA21, 0 0 9px #FCCA21;
+    background-color: #FCCA21;
+    color: #14151f;
+  }
+  25% {
+    box-shadow: 0 0 3px #0D4E81, 0 0 6px #0D4E81, 0 0 9px #0D4E81;
+    background-color: #0D4E81;
+    color: #FFFFFF;
+  }
+  50% {
+    box-shadow: 0 0 3px #BD1721, 0 0 6px #BD1721, 0 0 9px #BD1721;
+    background-color: #BD1721;
+    color: #FFFFFF;
+  }
+  75% {
+    box-shadow: 0 0 3px #E0E0E0, 0 0 6px #E0E0E0, 0 0 9px #E0E0E0;
+    background-color: #E0E0E0;
+    color: #14151f;
+  }
+  100% {
+    box-shadow: 0 0 3px #FCCA21, 0 0 6px #FCCA21, 0 0 9px #FCCA21;
+    background-color: #FCCA21;
+    color: #14151f;
+  }
+}
+
+.easter-egg-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Dynamic Tab System */
+.tab {
+  width: var(--inactive-tab-width);
+}
+
+.tab.active {
+  width: var(--active-tab-width);
+}
+
+.underline-bar {
+  left: var(--underline-left);
+  width: var(--active-tab-width);
+  transition: left 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.controls-panel-container {
+  transform: translateX(var(--panel-translate-x));
+}
