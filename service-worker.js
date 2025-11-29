@@ -3,6 +3,32 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox
 if (workbox) {
   console.log('Workbox is loaded');
 
+  // --- START OF SHARE TARGET IMPLEMENTATION ---
+  const shareTargetHandler = async ({ event }) => {
+    try {
+      const formData = await event.request.formData();
+      const files = formData.getAll('image'); // 'image' is the name from share_target params
+      const clientList = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+      
+      if (clientList.length > 0 && files.length > 0) {
+        clientList[0].postMessage({ type: 'shared-image', file: files[0] });
+        // Focus the client window after sharing.
+        await clientList[0].focus();
+      }
+    } catch (e) {
+      console.error('Share target handler failed:', e);
+    }
+    // Redirect to the app's start URL after handling the share.
+    return Response.redirect('/matrices/', 303);
+  };
+
+  workbox.routing.registerRoute(
+    ({ url, request }) => url.pathname === '/matrices/' && request.method === 'POST',
+    shareTargetHandler,
+    'POST'
+  );
+  // --- END OF SHARE TARGET IMPLEMENTATION ---
+
   // --- START OF OFFLINE ANALYTICS IMPLEMENTATION ---
 
   // 1. Initialize the Background Sync plugin for queuing failed analytics requests.
