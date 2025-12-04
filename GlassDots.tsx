@@ -56,8 +56,8 @@ const PRESETS_DATA: PresetDefinition[] = [
     },
     {
         id: 3, code: 'PAL', label: 'Palette',
-        desktop: { resolution: 52, pixelGap: 32, lowerLimit: 0, similaritySensitivity: 100, blurAmount: 84, ior: 100, grainSize: 8, grainAmount: 60, isMarkerEnabled: false, isBackgroundBlurEnabled: true, isMonochrome: false },
-        phone: { resolution: 6, pixelGap: 32, lowerLimit: 0, similaritySensitivity: 100, blurAmount: 84, ior: 100, grainSize: 0, grainAmount: 48, isMarkerEnabled: false, isBackgroundBlurEnabled: true, isMonochrome: false }
+        desktop: { resolution: 52, pixelGap: 32, lowerLimit: 0, similaritySensitivity: 100, blurAmount: 84, ior: 100, grainSize: 8, grainAmount: 60, isMarkerEnabled: true, isBackgroundBlurEnabled: true, isMonochrome: false },
+        phone: { resolution: 6, pixelGap: 32, lowerLimit: 0, similaritySensitivity: 100, blurAmount: 84, ior: 100, grainSize: 0, grainAmount: 48, isMarkerEnabled: true, isBackgroundBlurEnabled: true, isMonochrome: false }
     },
     {
         id: 4, code: 'MGR', label: 'Mono Grain',
