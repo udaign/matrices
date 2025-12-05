@@ -553,9 +553,9 @@ const App: React.FC = () => {
   };
 
   const tabDescriptions = {
-    valueAliasing: <>Create halftone-style dot matrix imagery. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
+    valueAliasing: <>Create halftone dot matrix imagery. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
     pfp: <>Create glyph mirror profile pictures. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
-    glassDots: <>Create organic dot matrix overlays. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
+    glassDots: <>Create organic glass dot overlays. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
     wallpaper: <>Convert images into dot-matrix style. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
     photoWidget: "Create dot-matrix Pokémon photo widgets.",
   };
