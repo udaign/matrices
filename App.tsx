@@ -553,11 +553,11 @@ const App: React.FC = () => {
   };
 
   const tabDescriptions = {
-    valueAliasing: <>Create value-aliased imagery. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
-    pfp: <>Create glyph mirror styled profile pictures. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
-    glassDots: <>Create imagery with a glossy, glass-like dot effect. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
-    wallpaper: <>Create matrix styled wallpapers. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
-    photoWidget: "Create matrix styled photo widgets.",
+    valueAliasing: <>Create halftone-style dot matrix imagery. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
+    pfp: <>Create glyph mirror profile pictures. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
+    glassDots: <>Create organic dot matrix overlays. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
+    wallpaper: <>Convert images into dot-matrix style. <strong className={`font-bold ${theme === 'dark' ? 'text-nothing-light' : 'text-black'}`}>Drag to crop</strong> into desired area.</>,
+    photoWidget: "Create dot-matrix Pokémon photo widgets.",
   };
 
   const previewContainerPadding = useMemo(() => {
@@ -606,7 +606,7 @@ const App: React.FC = () => {
                 trackEvent('community_thread_header_click');
                 window.open(NOTHING_COMMUNITY_SHARE_LINK, '_blank', 'noopener,noreferrer');
               }} className={baseButtonClasses} aria-label="Visit Community Thread">
-                <span className="hidden md:inline">Community Thread</span>
+                <span className={installPrompt ? "hidden md:inline" : "inline"}>Community Thread</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6 md:ml-2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               </button>
             )}
