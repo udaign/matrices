@@ -265,7 +265,7 @@ const App: React.FC = () => {
           Support ❤️
         </button>
         <span className="mx-2">|</span>
-        <a href="https://nothing.community/u/Udaign" target="_blank" rel="noopener noreferrer" className={linkClasses} onClick={() => trackEvent('community_profile_visit')}>
+        <a href="https://udaign.com/" target="_blank" rel="noopener noreferrer" className={linkClasses} onClick={() => trackEvent('community_profile_visit')}>
           © Uday
         </a>
       </p>
